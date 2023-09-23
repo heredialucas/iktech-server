@@ -1,4 +1,5 @@
 import { ApolloServer } from '@apollo/server';
+import { startStandaloneServer } from '@apollo/server/standalone';
 import { Products } from './src/database/zapato.js';
 
 // A schema is a collection of type definitions (hence "typeDefs")
@@ -42,7 +43,11 @@ const server = new ApolloServer({
 //  1. creates an Express app
 //  2. installs your ApolloServer instance as middleware
 //  3. prepares your app to handle incoming requests
-server.listen().then(({ url }) => {
-  // eslint-disable-next-line no-console
-  console.log(`🚀  Server ready at ${url}`);
+const port = Number.parseInt(process.env.PORT) || 4000;
+
+const { url } = await startStandaloneServer(server, {
+  listen: { port },
 });
+
+// eslint-disable-next-line no-console
+console.log(`🚀  Server ready at: ${url}`);
