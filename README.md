@@ -1,39 +1,20 @@
-<h1 align='center' >TURNIFY SYNC</h1>
-
-<h3>Description</h3>
-
-**_`TurnifySync`_** is an innovative shift management system designed exclusively for barbershops. Our cloud-based platform allows you to easily manage your customers' schedules, ensuring a seamless experience for both them and you.
+<h1 align='center' >IKTECH TÉCNICA</h1>
 
 ### Features
 
-- [x] Create model for Client
 - [ ] Create model for Configuration
-- [ ] Create model for User
 - [x] Create configuration for database
 - [x] Create configuration for server
-- [x] Create configuration for server test
-- [x] Create configuration for database test
-- [x] Create configuration for docker-compose database
 
 ## Technologies
 
 - [Node.js](https://nodejs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Nodemon](https://nodemon.io/)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [Husky](https://typicode.github.io/husky/)
-- [Jest](https://jestjs.io/)
-- [mongodb-memory-server](https://www.npmjs.com/package/mongodb-memory-server)
-- [ts-jest](https://kulshekhar.github.io/ts-jest/)
 - [GraphQL](https://graphql.org/)
 - [Apollo Server](https://www.apollographql.com/docs/apollo-server/)
 - [GraphQL Tools](https://www.graphql-tools.com/)
-- [Argon2](https://github.com/ranisalt/node-argon2)
-- [dotenv](https://www.npmjs.com/package/dotenv)
-- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
-- [Mongoose](https://mongoosejs.com/)
-- [Nodemailer](https://nodemailer.com/about/)
 
 ### Workflow
 

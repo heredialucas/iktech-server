@@ -6,6 +6,7 @@ const { typeDefs, resolvers } = schema;
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  introspection: true,
 });
 
 // Passing an ApolloServer instance to the `startStandaloneServer` function:
