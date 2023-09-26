@@ -4,6 +4,7 @@ const models = `
      precio: Int
      referencia: String
      foto: String
+     albumFotos: [String]
   }
 `;
 
