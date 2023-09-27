@@ -1,12 +1,125 @@
-<h1 align='center' >IKTECH TÉCNICA</h1>
+# IKTECH TECNICA
 
-### Features
+## Repositorios en GitHub
 
-- [ ] Create model for Configuration
-- [x] Create configuration for database
-- [x] Create configuration for server
+- [Repositorio del Cliente en GitHub](https://github.com/heredialucas/iktech-client.git)
+- [Repositorio del Servidor en GitHub](https://github.com/heredialucas/iktech-server.git)
 
-## Technologies
+## Vista previa en Vercel
+
+Puedes ver una vista previa en línea del cliente en [IKTECH CLIENT en Vercel](https://iktech-client.vercel.app).
+
+## Prueba el Back-end en Apollo Studio
+
+Puedes probar directamente el servidor GraphQL en Apollo Studio utilizando el siguiente enlace:
+
+[Explorador Apollo Studio](https://studio.apollographql.com/sandbox/explorer)
+
+Utilizando el siguiente endpoint para las peticiones https://iktech-server-m2mn-dev.fl0.io/
+
+Simplemente sigue el enlace y tendrás acceso a una herramienta interactiva que te permitirá ejecutar consultas y explorar la API del servidor de IKTECH TECNICA.
+
+La aplicación en Vercel consume datos desde el servidor GraphQL, que se encuentra en el siguiente endpoint:
+
+- [Endpoint GraphQL del Servidor](https://iktech-server-m2mn-dev.fl0.io/)
+
+## Configuración
+
+A continuación, se describen los pasos para configurar y ejecutar tanto el cliente como el servidor:
+
+1. **Cliente**
+
+   - Clona el repositorio del cliente desde GitHub:
+
+     ```bash
+     git clone https://github.com/heredialucas/iktech-client.git
+     ```
+
+   - Navega al directorio del cliente:
+
+     ```bash
+     cd iktech-client
+     ```
+
+   - Instala las dependencias:
+
+     ```bash
+     npm install
+     ```
+
+     ```bash
+     pnpm install
+     ```
+
+     ```bash
+     yarn install
+     ```
+
+   - Inicia la aplicación:
+
+     ```bash
+     npm run dev
+     ```
+
+     ```bash
+     pnpm run dev
+     ```
+
+     ```bash
+     yarn run dev
+     ```
+
+     El servidor estará en funcionamiento en el puerto especificado en la configuración.
+
+2. **Servidor**
+
+   - Clona el repositorio del servidor desde GitHub:
+
+     ```bash
+     git clone https://github.com/heredialucas/iktech-server.git
+     ```
+
+   - Navega al directorio del servidor:
+
+     ```bash
+     cd iktech-server
+     ```
+
+   - Instala las dependencias:
+
+     ```bash
+     npm install
+     ```
+
+   - Inicia el servidor:
+
+     ```bash
+     npm start
+     ```
+
+   El servidor estará en funcionamiento en el puerto especificado en la configuración.
+
+## Tecnologías
+
+En la construcción de IKTECH TECNICA se utilizaron las siguientes tecnologías:
+
+- **GraphQL**: La tecnología GraphQL se empleó para gestionar las consultas y manipulación de datos de manera eficiente.
+
+- **Apollo server and client**: La tecnología Apollo server and client se empleó para la creación y consumo de los servicios.
+
+- **TypeScript**: TypeScript se incorporó para agregar tipos estáticos a JavaScript y mejorar la robustez y legibilidad del código.
+
+- **Zustand**: Se utilizó zustand para el manejo de los estados internos de la app.
+
+- **React con Vite**: React se utilizó como la biblioteca principal para crear la interfaz de usuario de la aplicación.
+
+- **ESLint**: Se utilizó ESLint para garantizar la consistencia y calidad del código JavaScript en el proyecto.
+
+- **Prettier**: Prettier se implementó para formatear automáticamente el código y mantener un estilo uniforme en todo el proyecto.
+
+- **Husky**: Husky se configuró para ejecutar comprobaciones y acciones automatizadas en los commits de Git.
+
+- **Commitlint**: Se implementó Commitlint para asegurar que los mensajes de commit sigan un formato y convención específicos.
 
 - [Node.js](https://nodejs.org/)
 - [ESLint](https://eslint.org/)
@@ -15,27 +128,26 @@
 - [GraphQL](https://graphql.org/)
 - [Apollo Server](https://www.apollographql.com/docs/apollo-server/)
 - [GraphQL Tools](https://www.graphql-tools.com/)
+- [Zustand](https://zustand-demo.pmnd.rs/)
 
-### Workflow
 
-In this repository, we follow a workflow based on best practices to maintain an organized and collaborative development process. The following are the steps and practices you should follow when contributing to this project:
+## Metodología de Trabajo
 
-1. **Git Flow**: We use the Git Flow workflow to organize our branches. Development primarily takes place in the `development` branch, while the `main` branch contains stable versions of the project.
+Desarrollé este proyecto tratando de simular, lo mas similar posible, un proyecto en producción real, utilizando las tecnologías mencionadas anteriormente para simular un entorno de desarrollo con las mejores prácticas y la mayor escalabilidad posible. Sin embargo, he decidido omitir ciertos detalles para el objetivo de esta prueba técnica , como:
 
-2. **Conventional Commits**: To facilitate understanding and tracking of changes, we use Conventional Commits. This involves writing descriptive and structured commit messages in the format specified by Conventional Commits.
+- **Armado de las rutas:** En este proyecto, las rutas no han sido configuradas en detalle, ya que el objetivo principal es demostrar mi habilidad en tecnologías específicas y no enfocarse en la configuración de rutas complejas.
 
-3. **Pull Requests**: To incorporate changes into the repository, create a Pull Request from a feature or bug fix branch to the `development` branch. Be sure to include a clear description of the changes and reference related issues.
+- **Archivo .env:** Para simplificar el proceso de revisión de la prueba técnica, no he incluido un archivo .env para la gestión de variables de entorno. En un entorno de producción real, esto sería esencial para la seguridad y configuración.
 
-4. **Code Review**: Code submitted via Pull Requests will be reviewed by the team. Special attention is given to code quality, best practices, and test coverage. Comments and suggestions may be made to improve the implementation.
+- **Responsive:** La adaptación del proyecto a diferentes dispositivos y tamaños de pantalla (responsive design) no ha sido una prioridad en esta etapa de la prueba. En un proyecto real, se dedicaría tiempo y esfuerzo significativos para garantizar una experiencia óptima en diferentes dispositivos.
 
-5. **Merge to `development`**: Once a Pull Request has been reviewed and approved, the changes will be merged into the `development` branch.
+- **Pruebas y Testeo:** También es importante mencionar que en este proyecto no se implementó un sistema de testeo completo, se priorizó la implementación funcional sobre la implementación de pruebas detalladas. En un entorno de producción real, se seguirían las mejores prácticas de desarrollo de software y se llevarían a cabo pruebas exhaustivas para garantizar la robustez y confiabilidad del proyecto.
 
-6. **Clean Code and Testing**: We expect submitted code to be clean, readable, and following project style conventions. Additionally, it is important to include appropriate unit or integration tests for new features or bug fixes implemented.
+Este enfoque pragmático me permite destacar mis habilidades y conocimientos en las tecnologías específicas que se requieren para esta prueba técnica. Si fuera necesario, estaría encantado de expandir y mejorar estos aspectos en un entorno de desarrollo real.
 
-7. **Documentation**: We request the addition of for any new implementation or significant change. Within the `Documentation` folder, clear instructions should be provided to test new features and any relevant information for developers.
+## By
 
-We appreciate your collaboration and effort in following these recommended practices. Together, we can maintain an organized and high-quality repository.
+- Nombre: Heredia Lucas
+- Correo electrónico: heredialucasfac22@gmail.com
 
-If you have any questions or need assistance during the contribution process, feel free to reach out to the team.
-
-Thank you for being part of this project!
+Gracias por la oportunidad de demostrar mi capacidad técnica y mi enfoque en el desarrollo de software.
